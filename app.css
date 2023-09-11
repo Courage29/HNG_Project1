@@ -1,0 +1,102 @@
+* {
+  font-size: 1rem;
+}
+body {
+  font-family: Helvetica;
+  color: white;
+  height: 100vh; /* Set the height of the body to 100% of the viewport height */
+  display: flex; /* Enable Flexbox to control layout */
+  flex-direction: column; /* Arrange child elements in a column */
+  justify-content: space-between; /* Add equal space between the two halves */
+  background: linear-gradient(
+    to right,
+    #eadbc8 50%,
+    #dac0a3 50%
+  ); /* Two-color gradient */
+}
+#parentDiv {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 100px;
+}
+#Container {
+  display: flex;
+  flex-direction: column; /* Align items in a column */
+  align-items: start; /* Center items horizontally */
+  justify-content: space-between; /* Add equal spacing between items */
+}
+.button {
+  transition-duration: 0.5s;
+  border: solid #0d6efd;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 1rem;
+}
+
+.button:hover {
+  background-color: #0d6efd; /* blue */
+  color: white;
+}
+#imgLink {
+  display: flex;
+  flex-direction: column; /* Align items in a column */
+  align-items: center; /* Center items horizontally */
+  justify-content: space-between; /* Add equal spacing between items */
+}
+#image1 {
+  border-radius: 8rem;
+  width: 18rem;
+  height: 18rem;
+}
+.list {
+  padding: 10px;
+  background-color: #0d6efd;
+  border-radius: 7px;
+}
+.iteration {
+  margin: 20px 20px;
+}
+.value {
+  background-color: black;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+@media (max-width: 800px) {
+  #parentDiv {
+    display: flex;
+    flex-direction: column; /* Align items in a column */
+    align-items: center; /* Center items horizontally */
+    justify-content: space-between; /* Add equal spacing between items */
+  }
+  .iteration {
+    width: 100%;
+  }
+  #imgLink {
+    display: flex;
+    flex-direction: column; /* Align items in a column */
+    align-items: center; /* Center items horizontally */
+    justify-content: space-between; /* Add equal spacing between items */
+  }
+  #image1 {
+    height: 9rem;
+    width: 9rem;
+  }
+}
+@media (max-width: 600px) {
+  .iteration {
+    width: 100%;
+  }
+  * {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 290px) {
+  .keyValue {
+    display: inline-flex;
+  }
+
+  .list {
+    margin-right: 5px;
+  }
+}
